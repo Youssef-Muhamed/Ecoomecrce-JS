@@ -1,0 +1,26 @@
+.form-Control {
+  position: relative;
+}
+.form-Control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-Control.success i.fa-check {
+  visibility: visible;
+  color: #2ecc71;
+}
+.form-Control.error i.fa-exclamation {
+  visibility: visible;
+  color: #e74c3c;
+}
+.form-Control i.fa-exclamation {
+  color: #e74c3c;
+}
+.form-Control.success input {
+  border-color: #2ecc71;
+}
+.form-Control.error input {
+  border-color: #e74c3c;
+}

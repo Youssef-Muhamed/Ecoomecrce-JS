@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/shopping-bag-icon.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">E-Commerce</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <!-- <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>   
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button> -->
+                <!-- <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button> -->
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1 " id = "navMenu">
+                <ul class = "navbar-nav text-center d-flex  justify-content-start" id="cats">
+                    <li class = "nav-item px-2 py-2" >
+
+                        <a class = "nav-link text-uppercase text-dark" href="?">All</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            
+            <a class="text-decoration-none" href="../register/register.html"><button type="button"
+                class="btn btn-warning bootn">sign up</button></a>
+        <a class="text-decoration-none" href="../login/login.html"><button type="button" class="btn btn-info bootn">Login</button></a>
+        <div id="drop" class="dropdown ">
+
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" id="button">
+
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../profile/profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="../addproduct/addpro.html">Add product</a></li>
+                <li><a class="dropdown-item" href="../fav/fave.html">My Favorites</a></li>
+                <li><a class="dropdown-item" href="../changePass/changePass.html">Change Password</a></li>
+                <li><a class="dropdown-item" id="logout" href="#">Logout</a></li>
+            </ul>
+        </div>
+        <form class="d-flex p-2">
+            <input class="form-control me-2"  list="options" name='chooseOption' placeholder="Search" >
+            <!-- <input list="options" name="chooseOption"> -->
+<datalist id="options">
+  <!-- <option id="sxxsxsxsxs" value="Foo">
+  <option id="sxxsxsxsxs" value="Bar">
+  <option id="sxxsxsxsxs" value="Foo"> -->
+</datalist>
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </form>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <!-- <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+       
+    </header> -->
+    <!-- end of header -->
+
+
+    <!-- special products -->
+    <section id = "special" class = "py-5 my-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Products</h2>
+            </div>
+
+            <div class = "special-list row g-0" id="products">
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+
+
+    <!-- about us -->
+    <!-- <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/about_us.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- end of about us -->
+
+
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">E-commerce</a>
+                    <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                </div>
+
+
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                           Egupt , Giza 
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            eng.youssef2023@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +02 01028790794
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+   
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        
+        $(function() {
+        $('input[name=chooseOption]').on('keypress',function(e) {
+            if (e.key === "Enter"){
+            e.preventDefault()
+
+                var selectedOption = $('option[value="'+$(this).val()+'"]');
+                 window.location.href = '../singleProduct/index.html?'+selectedOption.attr('id');
+            }
+            // e.preventDefault()
+          
+        //   console.log(selectedOption.length ? selectedOption.attr('id') : 'This opiton is not in the list!');
+        });
+      });
+    </script>
+</body>
+</html>

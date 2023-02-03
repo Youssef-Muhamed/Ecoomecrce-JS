@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="profil.css">
+
+  <!-- FontAwesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/profil.css">
+
+</head>
+
+<body>
+  <!-- Navbar top -->
+  <div class="navbar-top">
+
+    <div class="title">
+      <h1>Profile</h1>
+    </div>
+    <a href="../home/index.html" >E-commerce</a>
+    <!-- Navbar -->
+    <ul>
+      <li>
+        <a href="#message">
+          <span class="icon-count">0</span>
+          <i class="fa fa-envelope fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#notification">
+          <span class="icon-count">0</span>
+          <i class="fa fa-bell fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <!--href= "login page" -->
+        <a href="#sign-out" id="logout">
+          <i class="fa fa-sign-out-alt fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <nav>
+      <!-- <a href=""><span id="home" class="material-symbols-outlined">
+          home
+        </span></a> -->
+       
+    </nav>
+    <!-- End -->
+  </div>
+  <!-- End -->
+
+  <!-- Sidenav -->
+  <div class="sidenav">
+    <div class="profile">
+      <img src="" alt="" width="200" height="200" id="imageProfile">
+
+      <div class="name" id="username">
+
+      </div>
+      <div class="job">
+        
+      </div>
+    </div>
+
+    <!-- <div class="sidenav-url">
+      <div class="url">
+        <a href="#profile" class="active">Profile</a>
+        <hr align="center">
+      </div>
+      <div class="url">
+        <a href="#settings">Edit</a>
+        <hr align="center">
+      </div> -->
+
+    </div>
+  </div>
+  <!-- End -->
+
+  <!-- Main -->
+  <div class="main">
+    <h2>IDENTITY</h2>
+    <div class="card1">
+      <div class="card-body">
+        <a href=""><i class="fa fa-pen fa-xs edit"></i></a>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>:</td>
+              <td id="name"></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>:</td>
+              <td id="email"></td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>:</td>
+              <td id="phone"></td>
+            </tr>
+            <tr>
+              <td>gender</td>
+              <td>:</td>
+              <td id="gender"></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="api"></div>
+    <section style="background-color: #eee;">
+      <div class="text-center container py-5">
+        <h4 class="mt-4 mb-5"><strong>My Ads</strong></h4>
+        <div class="row" id="card">
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card ">
+              <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp" class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                      <h5><span class="badge bg-primary ms-2">New</span></h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body" id="card">
+                <!-- <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">${productname}</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>${catogrey}</p>
+                </a>
+                <h6 class="mb-3">${price}</h6> -->
+        <!-- </div>
+            </div>
+          </div> -->
+        <!-- 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                  class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                      <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">$61.99</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+                  class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                      <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+                  class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                      <h5>
+                        <span class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+                  class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100"></div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">$61.99</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+                  class="w-100" />
+                <a href="#!">
+                  <div class="mask">
+                    <div class="d-flex justify-content-start align-items-end h-100">
+                      <h5>
+                        <span class="badge bg-primary ms-2">New</span><span
+                          class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="" class="text-reset">
+                  <h5 class="card-title mb-3">Product name</h5>
+                </a>
+                <a href="" class="text-reset">
+                  <p>Category</p>
+                </a>
+                <h6 class="mb-3">
+                  <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                </h6>
+              </div>
+            </div>>-->
+      </div>
+    </section>
+
+    <h2>SOCIAL MEDIA</h2>
+    <div class="card">
+      <div class="card-body">
+        <i class="fa fa-pen fa-xs edit"></i>
+        <div class="social-media">
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="fa-stack fa-sm">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-snapchat fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/profil.js"></script>
+
+</body>
+
+</html>
